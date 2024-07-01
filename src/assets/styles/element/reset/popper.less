@@ -1,0 +1,28 @@
+.el-popper:not(.el-dropdown__popper) {
+  background: var(--s-main-bg-color) ;
+  border-radius: 8px ;
+  box-shadow: 0 2px 12px 0 var(--s-black-boder-color) ;
+  border: none ;
+  padding: 10px 16px ;
+  color: var(--s-black-6);
+
+  .el-popper__arrow {
+    &::before {
+      border: none ;
+      box-shadow: none;
+    }
+  }
+
+  &.is-dark {
+    background: var(--s-popper-dark-bg) ;
+    color: var(--s-header-bg-color) ;
+    box-shadow: 0 2px 12px 0 var(--s-black-boder-color) ;
+  }
+}
+
+.el-popper.is-light {
+  .el-popper__arrow:before {
+    border: none;
+    box-shadow: 0 0 2px var(--s-dop-down-shadow-color);
+  }
+}

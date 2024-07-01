@@ -1,0 +1,40 @@
+.el-select,
+.el-input,
+.el-cascader,
+.el-textarea {
+  .el-input__wrapper,
+  .el-textarea__inner {
+    background-color: var(--s-bg-color);
+    box-shadow: none;
+  }
+  &.is-disabled {
+    .el-input__wrapper,
+    .textarea__inner {
+      background-color: #E4E5E9 !important;
+    }
+  }
+}
+.el-range-editor.el-input__wrapper {
+  background-color: var(--s-bg-color);
+  box-shadow: none !important;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 0 1px var(--el-input-hover-border-color) inset !important;
+  }
+  &.is-active {
+    --el-input-bg-color: var(--s-input-active-bg-color);
+    border-color: var(--s-blue-color) !important;
+    box-shadow: 0 0 0 1px var(--s-blue-color) !important;
+    &:hover {
+      box-shadow: 0 0 0 1px var(--s-blue-color) inset !important;
+    }
+  }
+}
+.el-picker__popper {
+  .el-popper__arrow {
+    display: none;
+  }
+}
+textarea::-webkit-resizer {
+  display: none;
+}

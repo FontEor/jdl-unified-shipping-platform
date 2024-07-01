@@ -1,0 +1,54 @@
+// styles/element/index.scss
+/* 只需要重写你需要的即可 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'white': #ffffff,
+    'black': #23252b,
+    'primary': (
+      'base': #3c6ef0,
+    ),
+    'success': (
+      'base': #12b35d,
+    ),
+    'warning': (
+      'base': #ff7700,
+    ),
+    'danger': (
+      'base': #fc3737,
+    ),
+    'error': (
+      'base': #fc3737,
+    ),
+    'info': (
+      'base': #a8abb2,
+    ),
+  ),
+  $border-radius: (
+    'base': 8px,
+  ),
+  $text-color: (
+    'primary': #23252b,
+    'regular': #525765,
+    'secondary': #868D9F,
+    'placeholder': #868D9F,
+    'disabled': #c0c4cc,
+  ),
+  $border-color-hover: rgba(60,110,240,0.15),
+  
+  // // 不生效
+  // $input: (
+  //   'bg-color': #F5F5F6,
+  // ),
+  // // 不生效
+  // $button-bg-color: (
+  //   'info': #F5F5F6
+  // ),
+  // // 不生效
+  // $button-text-color: (
+  //   'info': #23252b
+  // )
+);
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+@use "element-plus/theme-chalk/src/index.scss" as *;

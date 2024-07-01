@@ -1,0 +1,42 @@
+.setfocus {
+  // height: 100%;
+  width: 100%;
+  height: 100%;
+  .setfocus-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-style {
+    margin-left: 84px;
+  }
+  .setfocus-content {
+    background: var(--s-main-bg-color);
+    padding: 16px;
+    border-radius: 8px;
+    height: 100%;
+  }
+  .table-list {
+    height: 400px;
+  }
+  .pagination-style {
+    padding: 10px 0;
+    .el-pagination {
+      justify-content: end;
+      position: relative;
+      :deep(.el-pagination__total) {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+ }
+ .setfocus-border {
+  background: var(--s-main-bg-color);
+  border-radius: 12px;
+  padding: 16px;
+  height: 64px;
+}
+.modal-input{
+  width:318px
+}

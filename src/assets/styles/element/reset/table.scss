@@ -1,0 +1,19 @@
+.el-table {
+  .el-table__cell {
+    padding: 10px 0 !important;
+  }
+
+  &.el-table--large .el-table__cell {
+    padding: 14px 0 !important;
+  }
+
+  &.el-table--small .el-table__cell {
+    padding: 6px 0 !important;
+  }
+  .el-table__header-wrapper {
+    border-radius: 8px;
+  }
+  // TODO: small 和 default尺寸时 单元格内左右边距需要ui提供， small与defalut尺寸 所选框的左右边距待ui提供
+
+  --el-table-row-hover-bg-color: var(--s-blue-1);
+}

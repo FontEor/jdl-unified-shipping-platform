@@ -1,0 +1,28 @@
+.el-form-item {
+  .el-form-item__label {
+    padding-right: 12px;
+  }
+  .el-form-item__error {
+    
+  }
+}
+// 表单报错样式
+.el-form-item {
+  &.is-error {
+    .el-input__wrapper {
+      --el-input-bg-color: var(--s-red-1);
+      box-shadow: none;
+      
+      &:hover {
+        box-shadow: 0 0 0 2px var(--s-form-error-hover-color) inset ;
+        background-color: var(--s-input-active-bg-color);
+      }
+    }
+    .el-input .is-focus {
+      --el-input-bg-color: var(--s-input-active-bg-color);
+      border-color: var(--s-red-6) ;
+      box-shadow: 0 0 0 3px var(--s-red-shadow-color) ;
+      --el-input-text-color: var(--s-text-color-1);
+    }
+  }
+}
